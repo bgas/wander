@@ -1,0 +1,1 @@
+Using Angular JS produce a simple javascript app that allows people to move around and possibly even interact with a virtual environment. The enivornment is composed of pictures each with a location, an associated location and compass direction to allow rotational and forward movement.

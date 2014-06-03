@@ -1,0 +1,32 @@
+<!doctype html>
+<html ng-app>
+  <head>
+    <title>WanderLost</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.15/angular.min.js"></script>
+    <script src="wander.js"></script>
+    <link rel="stylesheet" href="wander.css">
+  </head>
+  
+  <body>   
+      
+    <div class="game" ng-controller="gameCtrl">
+      <div class="gameFrame" ng-style="image_path != '' && {'background-image':'url('+locations.current.view+')'}">
+    
+        <!--left turn-->
+        <a href="" class="leftTurn" ng-click="turn('left', locations.current.compass)"></a>
+        <!--forward-->
+        <a href="" class="goForward" ng-click="makeShowing(locations.current.link.loc, locations.current.link.face)"></a>
+        <!--right turn-->
+        <a href="" class="rightTurn" ng-click="turn('right', locations.current.compass)" ></a>
+      </div>
+      
+    </div>
+    
+  </div> 
+
+</body>
+</html>
+
+
+
+
